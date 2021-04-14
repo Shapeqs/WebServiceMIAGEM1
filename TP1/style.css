@@ -1,0 +1,32 @@
+.red-background {
+    background-color: #d08b8b;
+}
+.green-background {
+    background-color: #77e777;
+}
+
+.blue-background {
+    background-color: lightskyblue;
+    display: none;
+}
+
+p > .red-background {
+    font-style: italic;
+}
+
+div {
+    width: 100%;
+    display: flex;
+}
+
+p {
+    width: 100%;
+}
+
+#div1 {
+    flex-direction: row;
+}
+
+#div2 {
+    flex-direction: column;
+}
