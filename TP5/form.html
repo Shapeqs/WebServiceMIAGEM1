@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script type="text/javascript" src="script.js"></script>
+    <script>
+        window.onload = chargerBouteilles;
+    </script>
+</head>
+<body>
+<div id='form-div'>
+    <h1 id='title'>Formulaire</h1>
+    <form action='form.html' method='POST' id='form'>
+
+        <div class='settings'>
+
+            <label id='label-name'>Nom </label>
+            <input type='text' id='nom' required value="Vignasse">
+
+            <label id='label-year'>Année </label>
+            <input type='number' id='year' required value="2020">
+
+            <label id='label-price'>Prix </label>
+            <input type='number' id='price' required value="20">
+
+            <label id='label-quantity'>Quantité </label>
+            <input type='number' id='quantity' required value="10000">
+
+            <label id='label-description'>Description </label>
+            <input type='text' id='description' required value="Une bouteille de vignasse">
+
+            </br>
+            <input type='button' value='Enregistrer la bouteille' onclick="ajoutBouteille()">
+            </br>
+            <input type='button' value='Sauvegarder les bouteilles' onclick="sauvegardeBouteilles()">
+            </br>
+            <input type='button' value='Export to XML' onclick="exportToXML()">
+        </div>
+    </form>
+</div>
+</body>
+</html>

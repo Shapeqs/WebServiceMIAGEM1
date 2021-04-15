@@ -1,0 +1,23 @@
+#div-bouteilles {
+    display: flex;
+    margin-top: 5%
+}
+
+#div-bouteille {
+    border: thin solid grey;
+    width: 10%;
+}
+
+.settings {
+    display:grid;
+    grid-template-columns: max-content max-content;
+    grid-gap:5px;
+}
+
+label { 
+    text-align:right; 
+}
+
+label:after { 
+    content: ":"; 
+}
